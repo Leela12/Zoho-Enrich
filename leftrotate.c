@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+	int n,nt,t,r,i=0,a[20],b[20],j,k=0,c=0;
+	scanf("%d",&n);
+	scanf("%d",&nt);
+	while(n!=0)
+	{
+		r=n%10;
+		n=n/10;
+		a[i++]=r;
+	}
+	for(j=i-1;j>=0;j--)
+	{
+		b[k++]=a[j];
+	}
+	while(c!=nt)
+	{
+		t=b[0];
+		for(j=0;j<k-1;j++)
+		{
+			b[j]=b[j+1];
+		}
+		b[k-1]=t;
+		c++;
+	}
+	for(j=0;j<k;j++)
+	{
+		printf("%d",b[j]);
+	}
+}
