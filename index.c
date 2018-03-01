@@ -1,21 +1,20 @@
 #include<stdio.h>
 int main()
 {
-	int n,x,i,a[30];
+	int j,x,i=0,a[30];
 	scanf("%d",&x);
-	scanf("%d",&n);
-	for(i=0;i<n;i++)
+	while(scanf("%d",&a[i])>0)
 	{
-		scanf("%d ",&a[i]);
+		i++;
 	}
-	for(i=0;i<n;i++)
+	for(j=0;j<i;j++)
 	{
-		if(a[i]==x)
+		if(a[j]==x)
 		{
-			printf("%d",i);
+			printf("%d",j);
 			break;
 		}
-		else if(i==n-1&&a[i]!=x)
+		else if(j==i-1&&a[j]!=x)
 		{
 			printf("-1");
 		}
