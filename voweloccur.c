@@ -31,7 +31,7 @@ int main()
 			c[4]++;
 		}
 	}
-	for(i=0;i<l;i++)
+	for(i=0;i<5;i++)
 	{
 		if(c[i]!=0)
 		{
