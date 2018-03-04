@@ -35,7 +35,7 @@ int main()
 	{
 		if(c[i]!=0)
 		{
-			printf("%c %d\n",a[i],c[i]);
+			printf("%c --> %d\n",a[i],c[i]);
 		}
 	}
 }
